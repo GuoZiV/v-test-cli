@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <title>领导驾驶舱</title>
+</head>
+
+<body>
+    <div id="main">
+        <keep-alive>
+            <view id="login" />
+            <!-- <view id="workbroadcast" async="true" /> -->
+            <!-- <view id="workbroadcastdetail" async="true" /> -->
+            <view id="myMarquee" async="true" />
+            <!-- 缺省页面 -->
+            <view id="default/defaultNoRight" async="true" />
+            <view id="default/defaultDev" async="true" />
+
+            <!-- TODO:展示所有卡片页面 -->
+            <view id="charts" async="true" />
+            <view id="mineTarget" async="true" />
+
+            <!-- 驾驶舱首页tab -->
+
+            <view id="home" />
+
+
+            <view id="home/index" parent="home" home="true" async="true" />
+
+            <view id="home/driveTab" parent="home" async="true" />
+            <view id="home/driveTab/caiwuDriveTab" parent="home/driveTab" async="true" />
+            <view id="home/driveTab/fengkongDriveTab" parent="home/driveTab" async="true" />
+            <view id="home/driveTab/jingjiDriveTab" parent="home/driveTab" async="true" />
+            <view id="home/driveTab/paihangDriveTab" parent="home/driveTab" async="true" />
+            <view id="home/driveTab/xinyongDriveTab" parent="home/driveTab" async="true" />
+            <view id="home/driveTab/yingxiaoDriveTab" parent="home/driveTab" async="true" />
+
+            <!-- 驾驶舱下钻页 -->
+            <view id="drivePage/jingji/deepDailyTradeVol" />
+            <view id="drivePage/jingji/deepDailyCommission" />
+            <view id="drivePage/jingji/deepMonthlyTradeVol" />
+            <view id="drivePage/jingji/deepMonthlyIncome" />
+            <view id="drivePage/jingji/deepMonthlyCost" />
+            <view id="drivePage/jingji/deepMonthlyProfit" />
+            <view id="drivePage/jingji/deepMonthlyNetProfit" />
+            <view id="drivePage/jingji/deepMonthlyProperty" />
+
+
+            <view id="drivePage/hangye/deepNetProperty" />
+            <view id="drivePage/hangye/deepOperationIncome" />
+            <view id="drivePage/hangye/deepNetProfit" />
+            <view id="drivePage/hangye/deepProfitTotal" />
+            <view id="drivePage/hangye/deepAStockAccountNumber" />
+            <view id="drivePage/hangye/deepAgencyStockNetIncome" />
+            <view id="drivePage/hangye/deepAgencyFinanceNetIncome" />
+            <view id="drivePage/hangye/deepPledgeRepurchaseIncome" />
+            <view id="drivePage/hangye/deepMarginInterestIncome" />
+            <view id="drivePage/hangye/deepManagedSecuritiesMarket" />
+            <view id="drivePage/hangye/deepFiduciaryManagementNetIncome" />
+            <view id="drivePage/hangye/deepFairValueChangeNetIncome" />
+            <view id="drivePage/hangye/deepSecurityBenefits" />
+            <view id="drivePage/hangye/deepInvestmentBankingNetIncome" />
+            <view id="drivePage/hangye/deepStocksUnderwriteIncome" />
+            <view id="drivePage/hangye/deepInterestNetIncome" />
+
+            <view id="drivePage/xinyong/deepIntradayLrTradeVol" />
+            <view id="drivePage/xinyong/deepIntradayLrCustomerAssets" />
+
+            <view id="drivePage/yingxiao/deepTotalEffectiveAccount" />
+
+            <!-- <view id="drivePage/driveIndex" /> -->
+            <!-- 财务下钻页面 -->
+            <view id="drivePage/caiwu/deepCheck" />
+            <view id="drivePage/caiwu/deepNetProperty" />
+            <view id="drivePage/caiwu/deepRegulation" />
+            <view id="drivePage/caiwu/deepPosition" />
+            <view id="drivePage/caiwu/deepDebt" />
+            <view id="drivePage/caiwu/deepBuyBack" />
+            <view id="drivePage/caiwu/deepPropertyTotal" />
+            <view id="drivePage/caiwu/deepDebtTotal" />
+            <view id="drivePage/caiwu/deepRightTotal" />
+
+            <!-- 双折图 -->
+            <view id="drivePage/caiwu/deepBusinessIncome" />
+            <view id="drivePage/caiwu/deepBusinessIncomeAccumulate" />
+
+            <view id="drivePage/caiwu/deepProfitTotal" />
+            <view id="drivePage/caiwu/deepProfitTotalAccumulate" />
+            <view id="drivePage/caiwu/deepNetProfitRank" />
+            <view id="drivePage/caiwu/deepNetProfitRankAccumulate" />
+
+            <view id="drivePage/caiwu/deepManageCost" />
+
+            <view id="drivePage/fengkong/deepDailyStrongFlagCustomer" />
+            <view id="drivePage/fengkong/deepDailyStrongFlagCustomerDebt" />
+
+            <view id="drivePage/fengkong/deepFixedIncomeFinancialAssets" />
+            <view id="drivePage/fengkong/deepOtherDebtFinancialAssets" />
+
+            <view id="drivePage/fengkong/deepDailyFinancialBusiness" />
+            <view id="drivePage/fengkong/deepDailyMarginTradingBusiness" />
+            <view id="drivePage/fengkong/deepDailyMarginConfirmCustomerBusiness" />
+            <view id="drivePage/fengkong/deepDailyMarginDefaultCustomerBusiness" />
+
+            <view id="drivePage/fengkong/deepDailyInvestmentStockFund" />
+
+            <view id="drivePage/fengkong/deepDailyInvestmentProfitLoss" />
+
+        </keep-alive>
+
+    </div>
+    <!--<snippet id="footer"/>-->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
